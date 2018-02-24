@@ -7,6 +7,6 @@
 * 本客服插件小巧，无JS脚本 纯CSS 实现，简洁如初。欢迎使用！
 * 使用的主题模板挂载点：页首钩子`<?php $this->header(); ?>`和页脚钩子`<?php $this->footer(); ?>`
 ## 结语
-> 附上插件效果图一张：
+ 附上插件效果图一张：
 ![typecho 插件][2]
  [2]: https://www.qqeg.cn/usr/uploads/2018/02/3955012556.gif
