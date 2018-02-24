@@ -1,0 +1,20 @@
+*{ font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1,"微软雅黑";font-size:12px;}
+
+.consult_contact{position:fixed;bottom:22%;right:0;width:114px;height:114px;cursor:pointer;}
+.consult_wrap{position:relative;width:114px;height:114px;}
+.consult_wrap .tip{position:absolute;right:95px;top:45px;display:none;width:150px;height:24px;border-radius:3px;font-size:14px;line-height:24px;text-align:center;background:#3091f2;color:#fff;-webkit-transition:display 1s ease;transition:display 1s ease;}
+.consult_wrap .tip:after{position:absolute;right:-8px;top:50%;content:"";width:0;height:0;border-top:4px solid transparent;border-right:4px solid transparent;border-bottom:4px solid transparent;border-left:4px solid #3091f2;-webkit-transform:translateY(-50%);transform:translateY(-50%);}
+.consult_contact img{position:absolute;left:50%;top:50%;width:auto;-webkit-transform:translate3d(-50%, -50%, 0);transform:translate3d(-50%, -50%, 0);}
+.consult_contact .staff_img{z-index:999;}
+@keyframes ballRotate{0%{transform:rotate(0);}
+ 100%{transform:rotate(360deg);}
+}
+.consult_contact .ball{top:20px;width:auto;transform-origin:0 38px;animation:ballRotate 2.5s infinite linear;z-index:9999;}
+@keyframes bg2Animation{0%{opacity:0;}
+ 50%{opacity:1;}
+ 100%{opacity:0;}
+}
+.consult_contact .bg-2{animation:bg2Animation 2.5s infinite linear;}
+.consult_contact:hover .tip{display:block;}
+@media (max-width:1100px){.consult_contact{display:none}
+}
